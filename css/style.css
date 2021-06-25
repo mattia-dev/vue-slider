@@ -1,0 +1,11 @@
+.slider-image img {
+    width: 100%;
+}
+
+.arrow {
+    font-size: 30px;
+}
+
+.arrow:hover {
+    background-color: lightgrey;
+}

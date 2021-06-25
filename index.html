@@ -14,9 +14,17 @@
     <div id="app">
         <div class="container">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10"></div>
-                <div class="col-1"></div>
+                <div class="col-1 arrow d-flex flex-column justify-content-center align-items-center" @click='prev()'>
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+
+                <div class="col-10 slider-image">
+                    <img :src="landscapeImages[sliderIndex]" alt="landscape">
+                </div>
+
+                <div class="col-1 arrow d-flex flex-column justify-content-center align-items-center" @click='next()'>
+                    <i class="fas fa-arrow-circle-right"></i>
+                </div>
             </div>
         </div>
     </div>
