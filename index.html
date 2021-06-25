@@ -12,14 +12,17 @@
 </head>
 <body>
     <div id="app">
-        <div class="container">
+        <div class="container slider d-flex align-items-center">
             <div class="row">
                 <div class="col-1 arrow d-flex flex-column justify-content-center align-items-center" @click='prev()'>
                     <i class="fas fa-arrow-circle-left"></i>
                 </div>
 
-                <div class="col-10 slider-image">
+                <div class="col-10 slider-image d-flex">
                     <img :src="landscapeImages[sliderIndex]" alt="landscape">
+                    <div class="slider-dots">
+                        <i v-for="(img, index) in landscapeImages" class="fas fa-circle"></i>
+                    </div>
                 </div>
 
                 <div class="col-1 arrow d-flex flex-column justify-content-center align-items-center" @click='next()'>

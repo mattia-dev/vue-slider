@@ -1,11 +1,38 @@
+.slider {
+    height: 100vh;
+}
+
+.slider-image {
+    position: relative;
+}
+
 .slider-image img {
     width: 100%;
 }
 
 .arrow {
     font-size: 30px;
+    color: blue;
+    transition: .5s;
 }
 
 .arrow:hover {
-    background-color: lightgrey;
+    background-color: lightblue;
+}
+
+.arrow i {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slider-dots i {
+    margin: 0 10px;
+    color: white;
 }
