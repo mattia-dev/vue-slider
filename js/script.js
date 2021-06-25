@@ -31,6 +31,16 @@ new Vue(
                 } else {
                     this.sliderIndex--;
                 }
+            },
+            changeImage: function(index) {
+                    this.sliderIndex = index;
+            },
+            selectedDot: function(index) {
+                if (index === this.sliderIndex) {
+                    return 'selected-dot';
+                } else {
+                    return '';
+                }
             }
         }
     }
